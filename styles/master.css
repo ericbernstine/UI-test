@@ -194,10 +194,6 @@
     margin: 0;
 }
 
-#shopSection .card:hover {
-    filter: drop-shadow(20px 20px 20px rgb(4, 129, 195, 0.7));
-}
-
 #shopSection .card_buttons{
     display: flex;
     flex-direction: row;
