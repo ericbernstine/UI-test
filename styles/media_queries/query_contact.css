@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 750px) {
     .estimateBlock{
-        height: 90% !important;
+        height: 85% !important;
         width: 85% !important;
     }
     .whyContact{
@@ -49,7 +49,7 @@
         gap: 5px !important;
     }
     .whyContact, .contactInfo, .locations{
-        margin: 5px auto !important;
+        margin: 10px auto !important;
         width: 95% !important;
     }
 }
