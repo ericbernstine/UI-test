@@ -46,7 +46,7 @@
 
 @media screen and (max-width:850px) {
     .estiamteForm{
-        height: 60% ;
+        height: 80% !important;
         width: 75% !important;
     }
 }
