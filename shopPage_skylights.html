@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="styles/media_queries/query_footerSection.css">
     <link rel="stylesheet" href="styles/media_queries/query_skylights.css">
 
-    <!-- scrollbar  -->
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-
+    <script src="script/query_script/query_headingSection.js" defer></script>
+    <script src="script/shopPage_carousel.js" defer></script>
+    <script src="script/shopPage_dropdown.js" defer></script>
     <title>Skylight Pros by Blue Bell</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -32,7 +31,9 @@
     <!-- HEADING SECTION -->
     <div class="headingSection">
         <div id="innerHeading">
-            <img class='logo' src="images/logo.png" alt="">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+              </div>
             <div class="menuHolder">
                 <div id="menu">
                     <ul class="nav-links">
@@ -69,83 +70,26 @@
     </div> <!-- Close headingSection -->
 
     <div class="mainBlock">
-        <div class="mainBlock_wrap" data-simplebar>
+            <label for="options">Select a skylight style</label>
+            <select id="options" name="options">
+                <option value="manual">Manual Skylights</option>
+                <option value="electric">Electric Skylights</option>
+                <option value="solar">Solar Skylights</option>
+                <option value="fixed">Fixed Skylights</option>
+                <option value="skymax">SkyMax Skylights (Large Areas)</option>
+                <option value="flat">Flat Roof Skylights</option>
+            </select>
             <div class="shopBlock">
-                <h4>Manual "Fresh Air Skylights</h4>
-                <div class="manual">
+                <h4>Manual Fresh Air Skylights</h4>
                     <img src="images/shop/skylights/manual_skylights/manual_freshAir_skylight.png" alt="" srcset="">
                     <div class="description">
                         <p>Ideal for a skylight within reach. This "Fresh Air" skylight allows you to easily open and
                             close
                             with the turn of a handle.</p>
+                            <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm manual">More Details...</button>
                     </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm manual">More Details...</button>
+                
             </div>
-
-            <div class="shopBlock">
-                <h4>Electric "Fresh Air Skylights</h4>
-                <div class="electric">
-                    <img src="images/shop/skylights/electric_skylights/electric_freshAir_skylight.png" alt="" srcset="">
-                    <div class="description">
-                        <p>Easily open and close this electric skylight with a concealed operator,
-                            powered by your own home's electricity.</p>
-                    </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm electric">More Details...</button>
-            </div>
-
-            <div class="shopBlock">
-                <h4>Solar "Fresh Air Skylights</h4>
-                <div class="solar">
-                    <img src="images/shop/skylights/solar_skylights/solar_freshAir_sklight.png" alt="" srcset="">
-                    <div class="description">
-                        <p>Open and close this skylight with the power of the sun. The solar panel attached allows for
-                            this
-                            skylight to open at the press of a button.</p>
-                    </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm solar">More Details...</button>
-            </div>
-
-            <div class="shopBlock">
-                <h4>Fixed Skylights</h4>
-                <div class="fixed">
-                    <img src="images/shop/skylights/fixed_skylights/fixedSkylight.png" alt="" srcset="">
-                    <div class="description">
-                        <p>Fixed Skylights are designed for the sole purpose of bringing in fresh air. These skylights
-                            are
-                            ideal for spaces like sunrooms or porches.</p>
-                    </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm fixed">More Details...</button>
-            </div>
-
-            <div class="shopBlock">
-                <h4>SkyMax Skylights</h4>
-                <div class="skyMax">
-                    <img src="images/shop/skylights/skymax_skylights/skyMax.png" alt="" srcset="">
-                    <div class="description">
-                        <p>SkyMax skylights offer maximum sunlight with flexible options on the size of skylight you
-                            want.
-                            Up to 10ft in length!</p>
-                    </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm skyMax">More Details...</button>
-            </div>
-
-            <div class="shopBlock">
-                <h4>Flat Roof Skylights</h4>
-                <div class="flatRoof">
-                    <img src="images/shop/skylights/flatroof_skylights/flatRoofSkylight.png" alt="" srcset="">
-                    <div class="description">
-                        <p>Where a slanted roof is not an option. Flat roof skylights fit perfect.
-                            The curved glass allows water to disperse evenly without issue.</p>
-                    </div>
-                </div>
-                <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm flatRoof">More Details...</button>
-            </div>
-        </div>
     </div> <!-- Close mainBlock -->
 
     <!-- DESCRIPTION SECTION -->
@@ -279,7 +223,7 @@
                 <div class="descCarousel">
                     <div class="slider">
                         <div class="slides">
-                            <img src="images/shop/skylights/solar_skylights/solar_freshAir_sklight.png"
+                            <img src="images/shop/skylights/solar_skylights/solar_freshAir_skylight.png"
                                 onclick='popUp(this)' alt="image 1" class="slide">
                             <img src="images/shop/skylights/solar_skylights/solar_skylight1.png" alt="image 2"
                                 onclick='popUp(this)' class="slide">
@@ -656,8 +600,6 @@
         </div>
     </div>
 
-    <script src="script/query_script/query_headingSection.js"></script>
-    <script src="script/shopPage_carousel.js"></script>
 </body>
 
 </html>

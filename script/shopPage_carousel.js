@@ -50,25 +50,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Initialize the first slide
         showSlide(slideIndex);
     });
-
-    $('.manual').click(() => {
-        document.getElementById('descriptionBlock1').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.electric').click(() => {
-        document.getElementById('descriptionBlock2').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.solar').click(() => {
-        document.getElementById('descriptionBlock3').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.fixed').click(() => {
-        document.getElementById('descriptionBlock4').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.skyMax').click(() => {
-        document.getElementById('descriptionBlock5').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.flatRoof').click(() => {
-        document.getElementById('descriptionBlock6').scrollIntoView({ behavior: 'smooth' });
-    })
 });
 
 function popUp(image) {
