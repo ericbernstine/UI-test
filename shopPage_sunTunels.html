@@ -10,7 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+        <script src="script/query_script/query_headingSection.js" defer></script>
+        <script src="script/shopPage_sunTunnel_carousel.js" defer></script>
+        <script src="script/sunTunnel_dropdown.js" defer></script>
     <link rel="stylesheet" href="styles/media_queries/query_headingSection.css">
     <link rel="stylesheet" href="styles/media_queries/query_footerSection.css">
     <link rel="stylesheet" href="styles/media_queries/query_sunTunnels.css">
@@ -23,7 +25,9 @@
 <body>
   <div class="headingSection">
     <div id="innerHeading">
-      <img class='logo' src="images/logo.png" alt="">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
       <div class="menuHolder">
         <div id="menu">
           <ul class="nav-links">
@@ -63,6 +67,11 @@
   </div> <!-- Close headingSection -->
 
     <div class="mainBlock">
+      <label for="options">Select a Sun Tunnel style: </label>
+      <select id="options" name="options">
+          <option value="flexible">Flexible Sun Tunnels</option>
+          <option value="rigid">Rigid Sun Tunnels</option>
+      </select>
         <div class="shopBlock">
             <h3>Flexible Sun Tunnels</h3>
             <div class="flexible">
@@ -76,21 +85,6 @@
             </div>
             <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm flexible">More Details...</button>
         </div>
-
-        <div class="shopBlock">
-            <h3>Rigid Sun Tunnels</h3>
-            <div class="rigid">
-                <div class="imgWrap">
-                    <img src="images/shop/sun_tunnels/rigid_sunTunnel/rigid_suntunnel.png" alt="" srcset="">
-                </div>
-                <div class="description">
-                    <p>Rigid tubes are recommended when there is a straight, unobstructed path from the roof to the
-                        ceiling.</p>
-                </div>
-            </div>
-            <button id='shopBlockBtn' class="btn btn-outline-primary btn-sm rigid">More Details...</button>
-        </div>
-
     </div>
 
     <div class="descriptionSection">
@@ -365,8 +359,7 @@
         </div>
       </div>
 
-    <script src="script/query_script/query_headingSection.js"></script>
-    <script src="script/shopPage_sunTunnel_carousel.js"></script>
+
 </body>
 
 </html>

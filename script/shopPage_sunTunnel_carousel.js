@@ -80,12 +80,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Initialize the first slide
         showSlide(slideIndex);
     });
-    $('.flexible').click(() => {
-        document.getElementById('descriptionBlock1').scrollIntoView({ behavior: 'smooth' });
-    })
-    $('.rigid').click(() => {
-        document.getElementById('descriptionBlock2').scrollIntoView({ behavior: 'smooth' });
-    })
 });
 
 function popUp(image) {

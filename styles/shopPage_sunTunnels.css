@@ -1,32 +1,50 @@
+body{
+    background-color: #dddddd;
+}
+
 .mainBlock{
-    position: absolute; /* Position the estimateBlock absolutely within #innerHeading */
+    position: absolute; 
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset by 50% of its own width and height to truly center */
-    width: 80%;
+    transform: translate(-50%, -50%); 
+    width: 85%;
     height: 85%;
     background-color: #eeeeee;
     opacity: 97%;
     margin-top: 40px;
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    gap: 1px 150px;
+}
+#options{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px solid rgba(106, 104, 104, 0.7);
+    border-radius: 5px;
+    width: 20%;
+    height: 40px;
 }
 .shopBlock{
     margin-left: 5px;
     margin-right: 5px;
-    flex-basis: calc(33.33% - 60px);
     border-radius: 5px;
+    
 }
-
-.shopBlock img{
-    height: 200px;
+.flexible{
+    background-color: #e0dcdc;
+}
+.mainBlock label{
+    margin-top: 20px;
+}
+.shopBlock img {
+    height: 500px;
     width: auto;
+    border-radius: 5px;
+    max-width: 100%;
     display: block;
-    margin: 5px auto;
+    margin: 0 auto;
 }
 
 #shopBlockBtn{
@@ -37,33 +55,18 @@
     background: #0369a0;
 }
 .shopBlock .description{
-    margin-top: 10px;
-    margin-left: 8px;
+    margin: 10px auto;
     width: 80%;
-    height: 70px;
-    font-size: 82%;
     padding-bottom: 5px;
 }
 body{
     background-color: #dddddd;
 }
 
-
-.flexible, .rigid{
-    background-color: #e0dcdc;
-    border-radius: 5px;
-}
-.flexible img, .rigid img{
-    height: 500px;
-    width: auto;
-    border-radius: 5px;
-}
 .imgWrap{
     padding-top: 10px;
 }
-.shopBlock h3{
-    font-size: 120%;
-}
+
 
 @media (max-width: 1500px){
     .shopBlock img{

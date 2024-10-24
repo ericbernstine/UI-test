@@ -6,7 +6,6 @@ let target = '';
 let button = document.querySelector('.shopBlock button')
 document.getElementById('options').addEventListener('change', (event) => {
     let current = event.target.value;
-    console.log(current)
     switch (current){
         case 'manual':
             target = 'manual';
@@ -66,6 +65,9 @@ button.addEventListener('click', () => {
             break;
         case 'flat':
             document.getElementById('descriptionBlock6').scrollIntoView({ behavior: 'smooth' })
+            break;
+        default:
+            document.getElementById('descriptionBlock1').scrollIntoView({ behavior: 'smooth' });
             break;
     }
 })
